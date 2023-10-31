@@ -2,14 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root {
-    --branco: #D9D9D9;
+    --branco: #cfcfcf;
     --laranja: #F76D02;
     --bg: #1C1C1C;
     --bg-laranja: #15150B;
-    --cinza-hv: #bdbdbd;
+    --cinza-hv: #f8d1ca;
 }
 
 @font-face {
@@ -17,33 +18,20 @@
     src: url('./font/college.ttf') format('truetype');
 }
 
-body {
-    background-color: var(--bg);
-    height: 100vh;
-}
+body { background-color: var(--bg); height: 100vh; }
 
-body, a, button {
-    font-family: "College", Roboto;
+body, a, button { 
+    font-family: "College", Roboto; 
     color: var(--branco);
-} 
-
-ul {
-    list-style-type: none;
 }
 
-a {
-    text-decoration: none;
-}
+ul { list-style-type: none; }
 
-input, button {
-    border: none;
-    background: transparent;
-}
+a { text-decoration: none; }
 
-header {
-    width: 100%;
-    background-color: var(--bg-laranja);
-}
+input, button { border: none; background: transparent; }
+
+header { width: 100%; background: var(--bg-laranja); }
 
 nav {
     width: 100%;
@@ -52,14 +40,9 @@ nav {
     justify-content: space-around;
 }
 
-nav ul {
-    display: flex;
-    gap: 1em;
-}
+nav ul { display: flex; gap: 1em; }
 
-nav a img {
-    width: 4em;
-}
+nav a img { width: 4em; }
 
 nav > a:last-child {
     background-color: var(--laranja);
@@ -68,11 +51,9 @@ nav > a:last-child {
     font-weight: bold;
 }
 
-nav a {
-    font-family: Arial, Helvetica, sans-serif;
-    transition: 0.3s ease;
-}
+nav a { font-family: Arial, sans-serif; transition: 0.2s ease; }
 
-nav a:hover {
-    filter: invert(1);
-}
+nav a:hover { color: var(--cinza-hv); }
+
+nav a:last-child:active,
+button:active { transform: scale(.95); }
