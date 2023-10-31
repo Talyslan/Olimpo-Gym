@@ -8,6 +8,7 @@ main section:first-of-type {
 
 main section:first-of-type img:first-of-type {
     width: 40%;
+    max-width: 350px;
     margin-top: 2em;
 }
 
@@ -20,8 +21,37 @@ main section:first-of-type img:last-of-type {
 
 main section:first-of-type h1 { font-size: 7em; }
 
+/* Segunda sessão */
 main section:nth-child(2) {
-    background: url("./images/image5.png") center no-repeat;
+    background: url("./images/imae5.png") center no-repeat;
     background-size: cover;
     height: 100vh;
+}
+
+/* About Us */
+#aboutUs h2 {
+    text-align: center;
+    font-size: 2em;
+    margin: 1em;
+}
+
+#aboutUs .container,
+#aboutUs .container .box { display: flex; }
+
+#aboutUs .container { padding: 4em; gap: 3em;}
+
+#aboutUs .container .box {
+    background: var(--branco);
+    color: var(--bg);
+    border-radius: 1em;
+    max-height: 175px;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+#aboutUs .container .box p { margin: 1em; font-size: 1rem; overflow-y: auto;}
+#aboutUs .container .box img { width: 40%; min-width: 140px; }
+
+@media (max-width: 800px) {
+    #aboutUs .container { flex-direction: column; }
 }
