@@ -22,11 +22,11 @@ main section:first-of-type img:last-of-type {
 main section:first-of-type h1 { font-size: 7em; }
 
 /* Segunda sessão */
-main section:nth-child(2) {
-    /* background: url("./images/image5.png") center no-repeat; */
+/* main section:nth-child(2) {
+    background: url("./images/image5.png") center no-repeat;
     background-size: cover;
     height: 100vh;
-}
+} */
 
 /* About Us */
 #aboutUs h2 {
