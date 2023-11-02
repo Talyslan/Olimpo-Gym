@@ -29,3 +29,21 @@ const calculate = () => {
 };
 
 btnCalculate.addEventListener("click", calculate);
+
+// sexo select
+const masc = document.querySelector(".btnMasc");
+const fem = document.querySelector(".btnFem");
+
+masc.addEventListener("click", () => {
+    if (!masc.classList.contains("select")) {
+        masc.classList.add("select");
+        fem.classList.remove("select");
+    }
+})
+
+fem.addEventListener("click", () => {
+    if (!fem.classList.contains("select")) {
+        fem.classList.add("select");
+        masc.classList.remove("select");
+    }
+})

@@ -3,7 +3,7 @@ main section:first-of-type {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 90.7vh;
+    height: 90.8vh;
 }
 
 main section:first-of-type img:first-of-type {
@@ -21,20 +21,85 @@ main section:first-of-type img:last-of-type {
 
 main section:first-of-type h1 { font-size: 7em; }
 
-/* Segunda sessão */
-/* main section:nth-child(2) {
-    background: url("./images/image5.png") center no-repeat;
-    background-size: cover;
-    height: 100vh;
-} */
-
-/* About Us */
-#aboutUs h2 {
+/* Sessão produtos */
+#products > h2,
+#aboutUs h2  { 
     text-align: center;
-    font-size: 2em;
-    margin: 1em;
+    font-size: 4em;
+    margin: .4em;
 }
 
+#products > img { width: 100%; }
+
+#products .container {
+    padding: 3em;
+}
+
+#products .container .box-products {
+    background: var(--black);
+    padding: 2em;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 3em;
+    justify-items: center;
+
+}
+
+#products .container .box-products .product {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background: var(--white);
+    width: 250px;
+    transition: 0.4s ease;
+}
+
+#products .container .box-products .product:hover {
+    transform: translateY(-8px);
+}
+
+#products .container .box-products .product span {
+    margin-left: 1em;
+}
+
+#products .container .box-products .product,
+#products .container .box-products .product button {
+    color: var(--black);
+    font-weight: bold;
+}
+
+#products .container .box-products .product button {
+    background: var(--laranja);
+    padding: 1em;
+    letter-spacing: .3em;
+    transition: 0.4s ease;
+}
+
+#products .container .box-products .product button:hover {
+    background: var(--laranja-hv);
+    transform: scaleY(1.1);
+}
+
+#products .container .box-products .product img:first-of-type {
+    width: 20px;
+    position: absolute;
+    right: 0;
+    margin: .8em;
+    transition: .3s ease;
+}
+
+#products .container .box-products .product img:first-of-type:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#products .container .box-products .product img:last-of-type {
+    width: 50%;height: 70%; margin: 0 auto;
+}
+
+/* About Us */
 #aboutUs .container,
 #aboutUs .container .box { display: flex; }
 
@@ -44,15 +109,32 @@ main section:first-of-type h1 { font-size: 7em; }
     background: var(--branco);
     color: var(--bg);
     border-radius: 1em;
-    max-height: 200px;
+    max-height: 400px;
     max-width: 500px;
     margin: 0 auto;
     line-height: 1.3em;
 }
 
 #aboutUs .container .box p { margin: 1em; font-size: 1rem; overflow-y: auto;}
-#aboutUs .container .box img { width: 40%; min-width: 140px; }
+#aboutUs .container .box img { width: 40%; min-width: 140px; border-radius: .5em;}
+
+@media (max-width: 1250px) {
+    #products .container .box-products { 
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+@media (max-width: 960px) {
+    #products .container .box-products { 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
 
 @media (max-width: 800px) {
     #aboutUs .container { flex-direction: column; }
+
+    #products .container .box-products { 
+        grid-template-columns: repeat(1, 1fr); 
+    }
 }

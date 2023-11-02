@@ -135,3 +135,9 @@ form button:hover {
 form p a {
     color: var(--laranja)
 }
+
+@media (max-width: 800px) {
+    main { flex-direction: column; gap: .4em;}
+
+    .right, .left { width: 100%; }
+}

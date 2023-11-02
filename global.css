@@ -6,10 +6,12 @@
 }
 
 :root {
+    --white: #fff;
     --branco: #cfcfcf;
     --laranja: #F76D02;
     --laranja-hv: #a94900;
     --bg: #1C1C1C;
+    --black: #131313;
     --bg-laranja: #15150B;
     --cinza-hv: #f8d1ca;
 }
@@ -50,6 +52,12 @@ nav > a:last-child {
     padding: .8em 1.8em;
     border-radius: 4em;
     font-weight: bold;
+}
+
+@media (max-width: 500px) {
+    nav > a:last-child {
+        display: none;
+    }
 }
 
 nav a { font-family: Arial, sans-serif; transition: 0.2s ease; }
