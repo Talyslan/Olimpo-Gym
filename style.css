@@ -23,7 +23,7 @@ main section:first-of-type h1 { font-size: 7em; }
 
 /* Segunda sessão */
 main section:nth-child(2) {
-    background: url("./images/imae5.png") center no-repeat;
+    /* background: url("./images/image5.png") center no-repeat; */
     background-size: cover;
     height: 100vh;
 }
@@ -44,9 +44,10 @@ main section:nth-child(2) {
     background: var(--branco);
     color: var(--bg);
     border-radius: 1em;
-    max-height: 175px;
-    max-width: 450px;
+    max-height: 200px;
+    max-width: 500px;
     margin: 0 auto;
+    line-height: 1.3em;
 }
 
 #aboutUs .container .box p { margin: 1em; font-size: 1rem; overflow-y: auto;}

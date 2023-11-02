@@ -8,6 +8,7 @@
 :root {
     --branco: #cfcfcf;
     --laranja: #F76D02;
+    --laranja-hv: #a94900;
     --bg: #1C1C1C;
     --bg-laranja: #15150B;
     --cinza-hv: #f8d1ca;
@@ -29,7 +30,7 @@ ul { list-style-type: none; }
 
 a { text-decoration: none; }
 
-input, button { border: none; background: transparent; }
+input, button { border: none; background: transparent; cursor: pointer; transition: 0.3s ease;}
 
 header { width: 100%; background: var(--bg-laranja); }
 
@@ -57,3 +58,5 @@ nav a:hover { color: var(--cinza-hv); }
 
 nav a:last-child:active,
 button:active { transform: scale(.95); }
+
+.select { background: var(--laranja-hv); }

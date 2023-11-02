@@ -1,0 +1,17 @@
+.right h2 {
+    font-size: 4em;
+    margin: .3em 0;
+}
+
+form .box label[for="name"] input,
+form .box label[for="email"] input,
+form .box label[for="password"] input {
+    padding: 14px;
+    width: 100%;
+}
+
+form .box label[for="name"] input:focus,
+form .box label[for="email"] input:focus,
+form .box label[for="password"] input:focus {
+    outline: 0;
+}

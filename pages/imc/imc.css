@@ -1,0 +1,104 @@
+h1, p {
+    color: var(--laranja);
+    font-size: 2em;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+
+main > img:first-of-type {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    width: 25%;
+    max-width: 200px;
+}
+
+main > img:last-of-type {
+    width: 25%;
+    position: absolute;
+    top: 12%;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 3em;
+    column-gap: 4em;
+}
+
+section .sexo {
+    display: flex;
+    gap: 1em;
+}
+
+section .sexo button {
+    padding: 1em;
+}
+
+section .sexo button img {
+    width: 50%;
+    min-width: 30px;
+}  
+
+button {
+    background: var(--laranja);
+    border-radius: 3em;
+}
+
+button:hover {
+    background: var(--laranja-hv);
+}
+
+section .result {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+section .result button {
+    width: 150px;
+    height: 50px;
+}
+
+input[type=range] {
+    height: 26px;
+    --webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+}
+input[type=range]:focus {
+    outline: none;  
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 14px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #50555C;
+    background: #50555C;
+    border-radius: 14px;
+    border: 0px solid #000000;
+}
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #000000;
+    border: 0px solid #000000;
+    height: 20px;
+    width: 40px;
+    border-radius: 12px;
+    background: #529DE1;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -3px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #17273e;
+}

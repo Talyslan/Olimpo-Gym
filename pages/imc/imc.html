@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../global.css">
+    <link rel="stylesheet" href="./imc.css">
+    <title>Olimpo - IMC e TMB</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../../index.html">
+                <img src="../../images/logo.png" alt="Logo da Olimpo">
+            </a>
+
+            <ul>
+                <li><a href="../../index.html">Products</a></li>
+                <li><a href="../imcEtmb/imc.html">Calculate IMC</a></li>
+                <li><a href="../../index.html#aboutUs">About Us</a></li>
+            </ul>
+
+            <a href="../register/register.html">Register</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="sexo">
+                <button class="btn ">
+                    <img src="../../images/sexo/masc.png" alt="">
+                </button>
+                <button class="btn">
+                    <img src="../../images/sexo/fem.png" alt="">
+                </button>
+            </div>
+            <h1>IMC</h1>
+            
+            <label for="age">
+                <p>
+                    Your Age
+                    <br>
+                    <span id="ageChange">75</span> years old
+                </p>
+                <input type="range" id="age" min="6" max="120" value="72">
+            </label>
+            <label for="weight">
+                <p>
+                    Your Weight
+                    <br>
+                    <span id="weightChange">150</span>kg
+                </p>
+                <input type="range" id="weight" min="10" max="300" value="145">
+            </label>
+            <label for="height">
+                <p>
+                    Your Height
+                    <br>
+                    <span id="heightChange">200</span>cm
+                </p>
+                <input type="range" id="height" min="60" max="300" value="170">
+            </label>
+
+
+            <div class="result">
+                <p>Result: <span id="result">Value</span></p>
+                <button id="calculate">Calculate</button>
+            </div>
+        </section>
+
+        <img src="../../images/statues/statue3.png" alt="">
+        <img src="../../images/table.png" alt="">
+    </main>
+
+    <script src="../../scripts/imc.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+main {
+    display: flex;
+    height: 90.7%;
+}
+
+.right form a {
+    text-decoration: underline;
+}
+
+.left, .right {
+    width: 50%;
+}
+
+.left, .right, form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    background: linear-gradient(90deg, #FE7001 0%, #00052B 180%);
+    text-align: center;
+    justify-content: space-between;
+    font-size: 3em;
+}
+
+
+.left h2 {
+    margin-top: 1em;
+}
+
+.left a {
+    border-radius: 50px;
+    background: var(--branco, #D9D9D9);
+    padding: .5em;
+    color: #767373;
+    font-size: .4em;
+    box-shadow: 3px 5px 0 var(--bg);
+    transition: 0.5s ease;
+}
+
+.left a:hover {
+    transform: scale(1.05);
+    filter: invert(1);
+}
+
+@keyframes piscapisca {
+    0% { opacity: 100%; }
+    /* 50% { opacity: 40%; } */
+    100% { opacity: 20%; }
+}
+
+.left img {
+    width: 100%;
+    min-width: 150px;
+    margin: 0 auto;
+    animation: piscapisca infinite .8s alternate;
+}
+
+.right form {
+    gap: 2em;
+    width: 100%;
+}
+
+.right form .box, .right form button {
+    width: 80%;
+    max-width: 400px;
+}
+
+.right form .box {
+    background: var(--laranja);
+    padding: 3em 1.5em;
+    border-radius: 40px;
+    gap: 1.5em;
+}
+
+.right form .box, 
+.right form .box label {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+form .box label[for="email"] .input,
+form .box label[for="password"] .input {
+    display: flex;
+    align-items: center;
+}
+
+form .box .input {
+    background: var(--branco);
+    align-items: center;
+    border-radius: 32px;
+}
+
+form .box label[for="password"] img {
+    width: 12%;
+    max-width: 28px;
+    margin-right: 12px;
+    transition: 0.3s ease;
+}
+
+form .box label[for="password"] img:hover {
+    cursor: pointer;
+    background: var(--cinza-hv);
+    border-radius: 12px;
+    padding: 1px;
+}
+
+form .box .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: .8em;
+}
+
+form .box .remember-forgot label {
+    flex-direction: row;
+    gap: 6px;
+}
+
+form button {
+    background: var(--laranja);
+    padding: .6em;
+    border-radius: 12px;
+    font-size: 1.2em;
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    cursor: pointer;
+    filter: invert(1);
+}
+
+form p a {
+    color: var(--laranja)
+}

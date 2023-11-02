@@ -7,6 +7,8 @@
 
     <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../../global.css">
+    <link rel="stylesheet" href="../register&login.css">
+    <link rel="stylesheet" href="register.css">
     <title>Olimpo - Register</title>
 </head>
 <body>
@@ -17,14 +19,72 @@
             </a>
 
             <ul>
-                <li><a href="">Products</a></li>
-                <li><a href="">Calculate TMB</a></li>
-                <li><a href="">Calculate IMC</a></li>
-                <li><a href="">About Us</a></li>
+                <li><a href="../../index.html">Products</a></li>
+                <li><a href="../imc/imc.html">Calculate IMC</a></li>
+                <li><a href="../../index.html#aboutUs">About Us</a></li>
             </ul>
 
-            <a href="./pages/login/login.html">Login</a>
+            <a href="../login/login.html">Login</a>
         </nav>
     </header>
+
+    <main>
+        
+        <div class="right">
+            <h2>Register</h2>
+
+            <form action="../imc/imc.html" method="get">
+                <div class="box">
+                    <label for="name">
+                        Name Complete
+                        <div class="input">
+                            <input type="text" placeholder="Write your name complete" id="name" required>
+                        </div>
+                    </label>
+
+                    <label for="email">
+                        Email
+                        <div class="input">
+                            <input type="email" placeholder="Write your email" id="email" required>
+                        </div>
+                    </label>
+
+                    <label for="password">
+                        Password
+                        <div class="input">
+                            <input type="password" placeholder="Write your password" id="password" maxlength="24" required>
+                            <img src="../../images/input/VisiblePassword.png" id="imgPassword" alt="Visible password" />
+                        </div>
+                    </label>
+                    
+                    <div class="remember-forgot">
+                        <label for="remember-me">
+                            <input type="checkbox" id="remember-me">
+                            <span>Remember-me</span>
+                        </label>
+                        
+                        <a href="#">Forgot password?</a>
+                    </div>
+                </div>
+                
+                <button type="submit">Register</button>
+                
+                <p>
+                    Do you have an account?
+                    <a href="../login/login.html">
+                        Login
+                    </a> 
+                </p>
+            </form>
+        </div>
+
+        <div class="left">
+            <h2>Welcome <br> Back</h2>
+            <a href="../login/login.html">Login</a>
+            <img src="../../images/statues/statue4.png" alt="Statue">
+        </div>
+    </main>
+
+    <script src="../../scripts/password.js"></script>
 </body>
 </html>
