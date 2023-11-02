@@ -17,6 +17,7 @@ main section:first-of-type img:last-of-type {
     bottom: 0;
     right: 0;
     width: 40%;
+    min-width: 375px;
 }
 
 main section:first-of-type h1 { font-size: 7em; }
