@@ -30,7 +30,9 @@ main section:first-of-type h1 { font-size: 7em; }
     margin: .4em;
 }
 
-#products > img { width: 100%; }
+#products > img { 
+    width: 100%;
+}
 
 #products .container {
     padding: 3em;
